@@ -1,14 +1,18 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+     Camera Tips
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+	<div class="ion-padding text-center">
+  <ion-button color="primary" (click)="cameraPressed()">Take Picture</ion-button>
+  <ion-button color="secondary" (click)="libraryPressed()">Take from Library</ion-button>
+  <ion-button color="success" (click)="shareFacebookPressed()">Share on Facebook</ion-button>
+  <ion-button color="success" (click)="shareEmailPressed()">Share on Email</ion-button>
+  <ion-button color="success" (click)="openIAB()">Payment Button in app browser</ion-button>
+  <img src="{{image}}">
+</div>
 </ion-content>
